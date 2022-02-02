@@ -1,5 +1,5 @@
 def bubble_sort(this_list):
-    n = 0
+    n = 2
     try:
         if this_list[n] > this_list[n+1]:
             this_list[n], this_list[n+1] = this_list[n+1], this_list[n]
