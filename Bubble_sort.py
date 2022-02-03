@@ -1,12 +1,9 @@
 def bubble_sort(this_list):
-    n = 2
-    try:
-        if this_list[n] > this_list[n+1]:
-            this_list[n], this_list[n+1] = this_list[n+1], this_list[n]
-            n += 1
-            return bubble_sort(this_list)
-        else:
-            n += 1
-            return bubble_sort(this_list)
-    except IndexError:
+    swap = True
+    for i in range(len(this_list)-1):
+        if this_list[i] > this_list[i+1]:
+            this_list[i], this_list[i+1] = this_list[i+1], this_list[i]
+            swap = False
+    if swap:
         return this_list
+    return bubble_sort(this_list)
