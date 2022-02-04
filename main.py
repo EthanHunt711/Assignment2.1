@@ -4,6 +4,8 @@ from bubble_sort import bubble_sort
 from get_random import lists
 import time
 
+
+"""The main program for implementing the algorithms and saving the running time"""
 if __name__ == "__main__":
     something_start = time.time()
     something_l = linear_search(lists[0], 5, 5)
