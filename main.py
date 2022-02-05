@@ -30,7 +30,7 @@ def main(random_lists, list_index=0):
     print(f'The search result is: {something_b}')
     print('---------------------------------------------------------------------------')
     print(f'The running time for Bubble Sort is: {something_running_time_bubble}')
-    print(f'The search result is: {something_bl}')
+    print(f'The search result is a sorted list of {len(something_bl)} random items')
 
 
 
