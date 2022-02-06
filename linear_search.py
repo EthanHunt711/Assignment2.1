@@ -12,5 +12,3 @@ def linear_search(l_nrs, target_x, idx=0):
             idx += 1  # move to the next item
             return linear_search(l_nrs, target_x, idx)  # compare the next item with the target value
     return False
-
-

@@ -7,17 +7,19 @@ import time
 
 
 def main(random_lists, list_index=0):
-
+    # the running time for the linear search
     something_start = time.time()
     something_l = linear_search(random_lists[list_index], 5)
     something_stop = time.time()
     something_running_time_linear = something_stop - something_start
 
+    # the running time for the binary search
     something_start = time.time()
     something_b = binary_search(sorted(random_lists[list_index]), 5)
     something_stop = time.time()
     something_running_time_binary = something_stop - something_start
 
+    # the running time for the bubble sort
     something_start = time.time()
     something_bl = bubble_sort(random_lists[list_index])
     something_stop = time.time()
@@ -33,12 +35,12 @@ def main(random_lists, list_index=0):
     print(f'The search result is a sorted list of {len(something_bl)} random items')
 
 
+"""The main program for implementing the algorithms. The running time
+could be saved in a .csv file if it is run in the terminal"""
 
-"""The main program for implementing the algorithms and saving the running time
-in a .csv file"""
 if __name__ == "__main__":
     n = 0
-    for list in lists:
+    for list in lists:  # looping through the lists since the data is a list of random lists
         print(f'Search reults for list {n+1}')
         main(lists, n)
         print('---------------------------------------')
