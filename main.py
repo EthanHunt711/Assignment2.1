@@ -38,7 +38,7 @@ could be saved in a .csv file if it is run in the terminal"""
 if __name__ == "__main__":
     n = 0
     for list in lists:  # looping through the lists since the data is a list of random lists
-        print(f'Search reults for list {n+1}')
+        print(f'Search reults for list {n+1} with {len(list)} elements')
         main(lists, n)
         print('---------------------------------------')
         print('---------------------------------------')
